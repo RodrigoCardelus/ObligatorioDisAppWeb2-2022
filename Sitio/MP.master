@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MP.master.cs" Inherits="MPEmpleado" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style4
+        {
+            width: 21%;
+        }
+        .auto-style1 {
+            width: 100%;
+            height: 428px;
+        }
+        </style>
+</head>
+<body style="height: 450px">
+    <form id="form1" runat="server">
+            <table align="left" class="auto-style1">
+            <tr>
+            <td class="style4">
+                        <asp:Button id="BtnSalir" runat="server" Text="Desloguearse" 
+                            onclick="BtnSalir_Click"/>
+                        <br />
+                    </td>
+                    <td rowspan="3">
+                       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+         <br />
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            <tr>
+            <td class="style4">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Text="UsuarioEnvia:"></asp:Label>
+&nbsp; <asp:label id="lblUsuarioEnvia" runat="server"></asp:label>
+&nbsp;</td>
+                </tr>
+            <tr>
+            <td class="style4">
+                        <asp:TreeView ID="Menu" runat="server" ShowLines="True" OnSelectedNodeChanged="Menu_SelectedNodeChanged">
+                            <Nodes>
+
+                                <asp:TreeNode Text="Mantenimientos" Value="Mantenimientos">
+                                    <asp:TreeNode NavigateUrl="~/AltaUsuario.aspx" Text="Alta Usuario" 
+                                        Value="ALta Usuario"></asp:TreeNode>
+                                    <asp:TreeNode Text="Baja Modificacion Usuario" 
+                                        Value="BajaModificacionUsuario" NavigateUrl="~/BajaModificacionUsuario.aspx"></asp:TreeNode>
+                                     <asp:TreeNode Text="Alta Comun" 
+                                        Value="AltaComun" NavigateUrl="~/AltaComun.aspx"></asp:TreeNode>
+                                    <asp:TreeNode Text="Alta Privado" 
+                                        Value="AltaComun" NavigateUrl="~/AltaPrivado.aspx"></asp:TreeNode>
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Listados" Value="Listados">
+                                    <asp:TreeNode NavigateUrl="~/BandejaEntrada.aspx" Text="Bandeja Entrada" 
+                                        Value="Bandeja Entrada"></asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/BandejaSalida.aspx"
+                                        Text="Bandeja Salida" Value="Bandeja Salida">
+                                    </asp:TreeNode>
+                                </asp:TreeNode>
+                            </Nodes>
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+           
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+    </form>
+</body>
+</html>

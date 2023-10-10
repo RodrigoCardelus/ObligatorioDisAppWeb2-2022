@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e20b3e55ed1c4d51a3f2d43ca2c1f7fd" Name="Diagram1">
+        <EntityTypeShape EntityType="ObligatorioDisAppAppWeb2Model.Mensajes" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ObligatorioDisAppAppWeb2Model.TiposMensajes" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ObligatorioDisAppAppWeb2Model.Usuario" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="ObligatorioDisAppAppWeb2Model.FK__Mensajes__Codigo__0DAF0CB0" ManuallyRouted="false" />
+        <AssociationConnector Association="ObligatorioDisAppAppWeb2Model.FK__Mensajes__Nombre__0CBAE877" ManuallyRouted="false" />
+        <AssociationConnector Association="ObligatorioDisAppAppWeb2Model.Recibe" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
